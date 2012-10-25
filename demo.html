@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> JDebug Demo </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <META  CHARSET="utf-8">
+   <SCRIPT LANGUAGE="JavaScript" src="./js/Base.js"></SCRIPT>
+ <SCRIPT LANGUAGE="JavaScript" src="./js/JDebug.js"></SCRIPT>
+
+ </HEAD>
+
+ <BODY>
+	<div>
+		<h1>JDebug</h1>
+		<hr/>
+		<p>
+
+		JDebug is a collaborative JavaScript debugging tool. It give you an easy way to trace javascript info without any plugin.
+		and it can auto  syntax-hightlight you debug info.
+		Just use on simple line Debug.trace()  and pass you vars into and JDebug will show you on the page.
+
+		JDebug is base on Dean Edwards Base lib,So before using JDebug,you wanna include Base.js and JDebuger.js,
+
+		</p>
+		<p>
+		  &lt;SCRIPT LANGUAGE="JavaScript" src="./js/Base.js"&gt;&lt;/SCRIPT&gt;<br/>
+&lt;SCRIPT LANGUAGE="JavaScript" src="./js/JDebuger.js"&gt;&lt;/SCRIPT&gt;
+			
+			
+		</p>
+		<p>
+			<strong >usage:</strong>
+			<ol>
+			<li>using Debug.run=1 to enable debug,using Debug.run=0 to disable Debug window.</li>
+			<li>using Debug.trace(Param) to log info.</li>
+			</ol>
+		</p>
+	<div>
+ </BODY>
+ <SCRIPT LANGUAGE="JavaScript">
+ <!--
+var ObjectDebug={
+	"title":"this is a Object",
+	"key":"this is an Object key",
+	"array":["arr[0]","arr[1]"]
+};
+/*====================================
+*上传的信息
+======================================*/
+var nodeInfo={
+	"userId":"65135238",
+	"nodeId":"4b0a46f7-cd8f-4bdb-8d89-5e6cf343044d",
+	"path":"/美女"
+};
+var fileInfo={
+	"name":"采集测试.gif",  //注意得带后缀...
+	"thumb":"",
+	"width":300,
+	"height":200,
+	"url":"http://www.baidu.com/img/baidu_jgylogo3.gif",
+	"desc":"采集测试百度图片",
+	"size":300,
+	"type":1,
+	"collectType":1  //collectType表示采集类型，包括0：视频,1：其他，2:mht
+};
+
+//var loader=new ADD_FILE_LOADER();
+//loader.setLogin(loginInfo);
+//loader.setNode(nodeInfo);
+//loader.setFile(fileInfo);
+
+Debug.run=1;
+Debug.trace("this is the test debug info ,using Debug.run=1 to enable debug");
+Debug.trace(ObjectDebug);
+Debug.trace(nodeInfo);
+ //-->
+ </SCRIPT>
+</HTML>
